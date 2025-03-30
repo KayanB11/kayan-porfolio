@@ -1,23 +1,173 @@
 <!DOCTYPE html>
-<style>
-  /* netnet default bg */
-  body {
-    margin: 0;
-    background-image: linear-gradient(#515199a8 2px, transparent 1px),
-      linear-gradient(90deg, #515199a8 2px, transparent 1px);
-    background-size: 50px 50px;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-  }
+<html lang="EN-CA">
+  <head>
+    <meta charset="UTF-8">
+    <title>Kayan's Portfolio</title>
+    <!-- Made by Kayan Baig -->
+   <!-- remove all uneeded comments at the end --> 
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+    body {
+      background-color: #0F0F0F;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+    }
 
-  body::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(0deg, #c76ebca8, #515199a8);
-  }
-</style>
+    /* Container for the entire header */
+    .header {
+      display: flex;
+      justify-content: space-between; /* Space between logo and nav links */
+      align-items: center; /* Align items vertically */
+      padding: 0.5em;
+      background-color: #0F0F0F; /* Dark background for the nav */
+      border-bottom: 1px solid #FFFFFF;
+    }
+
+    /* Logo */
+    .logo {
+      width: 6em;
+      margin-top: 10px; 
+      margin-bottom: 8px;
+    }
+      
+
+    /* Unordered list for navigation links */
+    ul {
+      list-style-type: none;
+      display: flex; /* Arrange items horizontally */
+    }
+
+    /* List item styling */
+    li {
+      margin-right: 10px; /* Space between each menu item */
+    }
+
+    /* Link styling */
+    li a {
+      color: white;
+      font-family: 'Inter', sans-serif;
+      text-decoration: none;
+      padding: 0.8em;
+      font-size: 1em;
+      font-weight: 500;
+    }
+
+    /* Hover effect on links */
+    li a:hover {
+      color: #C71585;
+    }
+      
+      .home {
+        background-color: #0F0F0F; /* Dark background for the nav */
+        border-bottom: 1px solid #FFFFFF;
+        padding-bottom: 7.5em;
+      }
+      
+     .portrait {
+       width: 26em;
+       margin-top: 2em;
+       margin-left: 34em;
+       border-radius: 20px;
+      }
+      
+      .home h2 {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 1.5em;
+        margin-top: -6em;
+        font-size: 4em;
+        font-weight: 300;
+      }
+      
+      .home h1 {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 1.2em;
+        margin-top: -0.5em;
+        font-size: 5em;
+      }
+      
+      .home p {
+        max-width: 25em;
+        font-size: 1em;
+        margin-left: 6.2em;
+        margin-top: -1.5em;
+      }
+      
+      .general-text {
+        color: #AEAEAE;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+      }
+      
+      .pink-text {
+        color: #C71585;
+        font-family: 'Inter', sans-serif;
+        font-weight: 625;
+      }
+      
+      .blue-text {
+        color: #B6D0E2;
+        font-family: 'Inter', sans-serif;
+        font-weight: 625;
+      }
+      
+      
+  </style>  
+  </head>
+  
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <img src="logonew.png" alt="two circles on top of each other" class="logo">
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    
+  <!-- Home -->
+    <div class="home">
+      <img src="homepicture.png" alt="picture of myself" class="portrait">
+      <h2>Hey!</h2>
+      <h1>I'm <i>Kayan,</i></h1>
+      <p class="general-text">a passionate <span class="pink-text">graphic designer</span> who loves experimenting with different styles and <span class="blue-text">bringing unique visions to life</span> through my work.</p>
+    </div>
+    
+  <!-- Portfolio -->
+  
+  <!-- About -->
+    
+  <!-- Contact -->
+  
+  </body>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</html>
     
