@@ -66,20 +66,21 @@
       color: #C71585;
     }
       
-      .home {
+      .home-container {
+        display: flex;
         background-color: #0F0F0F; /* Dark background for the nav */
         border-bottom: 1px solid #FFFFFF;
         padding-bottom: 7.5em;
       }
-      
-     .portrait {
-       width: 26em;
-       margin-top: 2em;
-       margin-left: 34em;
+    
+     .home-image {
+       position: relative;
+       top: 120px;
+       float: right;
        border-radius: 20px;
       }
       
-      .home h2 {
+      .home-h2 {
         color: white;
         font-family: 'Roboto', sans-serif;
         margin-left: 1.5em;
@@ -88,7 +89,7 @@
         font-weight: 300;
       }
       
-      .home h1 {
+      .home-h1 {
         color: white;
         font-family: 'Roboto', sans-serif;
         margin-left: 1.2em;
@@ -96,7 +97,7 @@
         font-size: 5em;
       }
       
-      .home p {
+      .home-p {
         max-width: 25em;
         font-size: 1em;
         margin-left: 6.2em;
@@ -139,11 +140,19 @@
     </div>
     
   <!-- Home -->
-    <div class="home">
-      <img src="homepicture.png" alt="picture of myself" class="portrait">
+    <div class="home-container">
+      <div class="home-image">
+      <img src="homepicture.png" alt="picture of myself" width="300">
+        </div>
+      <!-- <div class="home-h2">
       <h2>Hey!</h2>
+        </div>
+      <div class="home-h1">
       <h1>I'm <i>Kayan,</i></h1>
+        </div>
+        <div class="home-text">
       <p class="general-text">a passionate <span class="pink-text">graphic designer</span> who loves experimenting with different styles and <span class="blue-text">bringing unique visions to life</span> through my work.</p>
+        </div>
     </div>
     
   <!-- Portfolio -->
