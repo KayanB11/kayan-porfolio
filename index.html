@@ -4,50 +4,178 @@
     <meta charset="UTF-8">
     <title>Kayan's Portfolio</title>
     <!-- Made by Kayan Baig -->
-    
+    <!-- CHECK IF YOU CAN FIX THE ISSUE OF STUFF GOING OVER THE NAV BAR WITHOUT Z-INDEX -->
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    
-    <style>
 
+    <style>
+      body {
+        background-color: #0F0F0F;
+        margin: 0;
+        float: center;
+        font-family: "Inter", sans-serif;
+      }
+
+      p {
+        color: #AEAEAE;
+        font-weight: 400;
+      }
+      
+      #nav {
+        position: fixed;
+        float: none;
+        width: 100%;
+        background-color: #222222;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 1.10em;
+        padding-top: 5px;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #ffffff;
+        z-index: 10;
+      }
+
+      #nav ul {
+        display: flex;
+        align-items: center;
+      }
+
+      #nav li {
+        display: inline;
+        margin: 20px;
+      }
+
+      #nav a {
+        text-decoration: none;
+        color: white;
+      }
+
+      #nav a:hover {
+        color: #C71585;
+      }
+
+      #nav .logo {
+        width: 120px;
+      }
+      
+      .container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        color: white;
+        background-color: #0F0F0F;
+        border-bottom: 1px solid #ffffff;
+      }
+      
+      .hometext {
+        position: relative;
+        top: 120px;
+        left: 150px;
+        font-family: "Roboto", sans-serif;
+      }
+      
+      .hometext h2 {
+        position: relative;
+        display: flex;
+        font-size: 4em;
+        font-weight: 200;
+        bottom: 15px;
+      }
+      
+      .hometext h1 {
+        position: relative;
+        display: flex;
+        bottom: 90px;
+        font-size: 7em;
+        font-weight: 700;
+      }
+      
+      .hometext p {
+        position: relative;
+        display: block;
+        bottom: 160px;
+        width: 60%;
+        font-size: 1.1em;
+      }
+      
+      .bluetext {
+        color: #B6D0E2;
+        font-weight: 500;
+      }
+      
+      .pinktext {
+        color: #C71585;
+        font-weight: 500;
+      }
+      
+      .homeimage {
+        position: relative;
+        width: 500px;
+        right: 150px;
+        margin-bottom: 12px;
+        margin-top: 120px;
+        border-radius: 20px;
+      }
       
       
-  </style>  
+    </style>
   </head>
-  
+
   <body>
-  <!-- Nav -->
-    
-  <!-- Home -->
-    
-  <!-- Portfolio -->
+    <!-- Nav -->
+    <div id="nav">
+      <ul>
+        <li> <a href="#home">Home</a></li>
+        <li> <a href="#portfolio">Portfolio</a></li>
+        <img src="logonew.png" alt="description of image" class="logo">
+        <li> <a href="#about">About</a></li>
+        <li> <a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="container">
+        <div class="hometext">
+          <h2>Hey!</h2>
+          <h1><i>I’m Kayan,</i></h1>
+          <p>A passionate <span class="pinktext">graphic designer</span> who loves experimenting with different styles and <span class="bluetext">bringing unique visions</span> to life through my work.</p>
+        </div>
+        <img src="homepicture.png" alt="picture of myself" class="homeimage">
+      </div>
   
-  <!-- About -->
+    </section>
     
-  <!-- Contact -->
-  
+    
+    <!-- Portfolio -->
+
+    <!-- About -->
+
+    <!-- Contact -->
+
   </body>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
-    
