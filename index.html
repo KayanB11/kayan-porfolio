@@ -21,6 +21,8 @@
         margin: 0;
         float: center;
         font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+        overflow-y: scroll;
       }
 
       p {
@@ -32,7 +34,7 @@
         position: fixed;
         float: none;
         width: 100%;
-        background-color: #222222;
+        background-color: #0F0F0F;
         font-weight: 400;
         font-size: 1.10em;
         padding-top: 5px;
@@ -66,6 +68,10 @@
       }
 
       #portfolio {
+        border-bottom: 1px solid #ffffff;
+      }
+      
+      #about {
         border-bottom: 1px solid #ffffff;
       }
 
@@ -244,16 +250,59 @@
         bottom: 10px;
         border-radius: 20px;
       }
+
+      .container2 {
+        padding: 50px 0px 86px 50px;
+      }
+      
+      .about-text {
+        position: relative;
+        left: 50px;
+        background-color: #1E1E1E;
+        max-width: 70%;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.25em;
+        border-radius: 20px;
+        margin-bottom: 65px;
+      }
+      
+      .about-text p {
+        padding: 20px;
+        font-weight: 400;
+      }
+      
+      .adobe-box {
+        position: relative;
+        float: right;
+        right: 65px;
+        bottom: 510px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+        
+}
+
+.adobe-box img {
+  margin-bottom: 20px;
+  background-color: white;
+  width: 130px;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+      
+      
     </style>
   </head>
 
   <body>
+    
     <!-- Nav -->
     <div id="nav">
       <ul>
         <li> <a href="#home">Home</a></li>
         <li> <a href="#portfolio">Portfolio</a></li>
-        <img src="logonew.png" alt="description of image" class="logo">
+        <img src="logonew.png" alt="my logo of two circles with my two favourite colours powder blue, and violet red." class="logo">
         <li> <a href="#about">About</a></li>
         <li> <a href="#contact">Contact</a></li>
       </ul>
@@ -267,7 +316,7 @@
           <h1><i>I’m Kayan,</i></h1>
           <p>A passionate <span class="pinktext">graphic designer</span> who loves experimenting with different styles and <span class="bluetext">bringing unique visions</span> to life through my work.</p>
         </div>
-        <img src="homepicture.png" alt="picture of myself" class="homeimage">
+        <img src="homepicture.png" alt="picture of myself." class="homeimage">
       </div>
     </section>
 
@@ -287,17 +336,17 @@
       </div>
 
       <div class="porfolio-images1">
-        <img src="danny.jpg" alt="F1 driver Daniel Ricciardo surrounded by butterflies">
-        <img src="winners.jpg" alt="All the winners from the 2023 F1 season">
-        <img src="kobe.jpg" alt="Kobe Bryant shooting a basketball">
+        <img src="danny.jpg" alt="F1 driver Daniel Ricciardo surrounded by butterflies.">
+        <img src="winners.jpg" alt="All the winners from the 2023 F1 season.">
+        <img src="kobe.jpg" alt="Kobe Bryant shooting a basketball.">
       </div>
 
       <div class="design-process">
-        <img src="logonew.png" alt="description of image">
+        <img src="logonew.png" alt="my logo of two circles with my two favourite colours powder blue, and violet red.">
 
         <p>My creative process <span class="pinktext">begins with a vision.</span> My goal is to <span class="bluetext">create something memorable</span> and I achieve that by staying true to my principles, always being eager to learn, and <span class="whitetext">to create art in it’s most authentic form.</span> </p>
 
-        <img src="logonew.png" alt="description of image">
+        <img src="logonew.png" alt="my logo of two circles with my two favourite colours powder blue, and violet red.">
       </div>
 
       <div class="block2">
@@ -305,16 +354,44 @@
       </div>
 
       <div class="portfolio-images2">
-        <img src="Artboard 1-min.jpg" alt="Self portraint with rocks and my name">
-        <img src="Artboard 2-min.jpg" alt="cool shapes and gradients with my design process explanation">
-        <img src="Artboard 3-min.jpg" alt="more graident shapes and colours with my design mindset explanation">
+        <img src="Artboard 1-min.jpg" alt="Self portraint with rocks and my name.">
+        <img src="Artboard 2-min.jpg" alt="cool shapes and gradients with my design process explanation.">
+        <img src="Artboard 3-min.jpg" alt="more graident shapes and colours with my design mindset explanation.">
       </div>
-
     </section>
 
-    <!-- About -->
-
+    <!-- About  -->
+    <section id="about">
+      <div class="container2">
+        <div class="headline">
+          <h3>About</h3>
+          <div class="line"></div>
+          <p>who is this guy that’s named after a pepper?</p>
+        </div>
+      </div> 
+    
+    <div class="about-text">
+      <p>Yes, you pronounce my name the same way you would for “cayenne pepper.”</p>
+      <p>My design journey started from seeing cool video edits of movies and shows I like to it now being my chosen career. Being a <span class="pinktext">storyteller at heart</span>, I love <span class="bluetext">experimenting with video and photo manipulation</span> to create memorable and unique designs that enlist a deep sense of emotion and connection.</p>
+      <p>With <span class="pinktext">years of experience with the Adobe suite</span>, I’m pursuing a degree in <span class="bluetext">Global Business &amp; Digital Arts at the University of Waterloo</span> to further enhance my creative skills and to gain experience in all facets of design.</p>
+    </div>
+      
+     <div class="adobe-box">
+       <img src="pro.png" alt="logo for premiere pro.">
+       <img src="photoshop.png" alt="logo for photoshop.">
+       <img src="ae.png" alt="logo for after effects.">
+      </div> 
+    </section>
+    
     <!-- Contact -->
 
+    <section id="contact">
+    
+    
+    
+    </section>
+    
+    
+    
   </body>
 </html>
