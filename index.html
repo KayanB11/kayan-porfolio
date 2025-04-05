@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <title>Kayan's Portfolio</title>
     <!-- Made by Kayan Baig -->
-    <!-- CHECK IF YOU CAN FIX THE ISSUE OF STUFF GOING OVER THE NAV BAR WITHOUT Z-INDEX -->
-
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +15,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         background-color: #0F0F0F;
         margin: 0;
@@ -76,12 +79,10 @@
         color: #C71585;
       }
 
-
       .connect a:hover {
         text-decoration: underline;
         color: #C71585;
       }
-
 
       #nav a {
         text-decoration: none;
@@ -231,13 +232,40 @@
         color: #C71585;
       }
 
-      .porfolio-images1 img {
+      .portfolio-images1 img {
         position: relative;
         margin-right: 75px;
         width: 400px;
         left: 50px;
         top: 15px;
         border-radius: 20px;
+        transition: transform 0.3s;
+      }
+
+      .design-process img {
+        width: 100px;
+      }
+
+      .adobe-box img {
+        margin-bottom: 20px;
+        background-color: white;
+        width: 130px;
+        padding: 5px;
+        border-radius: 25px;
+      }
+
+      .portfolio-images2 img {
+        position: relative;
+        margin-right: 32px;
+        width: 430px;
+        left: 50px;
+        bottom: 10px;
+        border-radius: 20px;
+        transition: transform 0.3s;
+      }
+
+      .portfolio-images1 img:hover {
+        transform: scale(1.05);
       }
 
       .design-process {
@@ -255,10 +283,6 @@
         justify-content: space-between
       }
 
-      .design-process img {
-        width: 100px;
-      }
-
       .design-process p {
         font-weight: 400;
       }
@@ -271,13 +295,8 @@
         font-size: 1.2em;
       }
 
-      .portfolio-images2 img {
-        position: relative;
-        margin-right: 32px;
-        width: 430px;
-        left: 50px;
-        bottom: 10px;
-        border-radius: 20px;
+      .portfolio-images2 img:hover {
+        transform: scale(1.03);
       }
 
       .container2 {
@@ -309,14 +328,6 @@
         flex-direction: column;
         padding: 20px 50px;
 
-      }
-
-      .adobe-box img {
-        margin-bottom: 20px;
-        background-color: white;
-        width: 130px;
-        padding: 5px;
-        border-radius: 25px;
       }
 
       .connect h4 {
@@ -414,7 +425,7 @@
         <p>view more here: <a href="https://www.instagram.com/designkb_/" target="_blank" class="instagram">Instagram↗</a></p>
       </div>
 
-      <div class="porfolio-images1">
+      <div class="portfolio-images1">
         <img src="danny.jpg" alt="F1 driver Daniel Ricciardo surrounded by butterflies.">
         <img src="winners.jpg" alt="All the winners from the 2023 F1 season.">
         <img src="kobe.jpg" alt="Kobe Bryant shooting a basketball.">
@@ -463,7 +474,6 @@
     </section>
 
     <!-- Contact -->
-
     <section id="contact">
       <div class="container2">
         <div class="headline">
